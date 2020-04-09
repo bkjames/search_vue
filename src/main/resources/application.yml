@@ -1,0 +1,63 @@
+spring:
+ application:
+   name: book-search-service
+
+ freemarker:
+   suffix: .html
+
+ datasource:
+   url: jdbc:h2:mem:bookdb
+   dirverClassName: org.h2.Driver
+   username: sa
+   password:
+
+ jpa:
+   database-platform: org.hibernate.dialect.H2Dialect
+   generate-ddl: true
+   open-in-view: false
+   show-sql: true
+   properties:
+     hibernate:
+       format_sql: true
+ h2:
+   console:
+     path: /h2-console
+     enabled: true
+     settings:
+       trace: true
+
+kakao:
+  host: https://dapi.kakao.com
+  api: /v3/search/book?
+
+
+
+
+
+
+#server:
+#  port: 8080
+#
+#spring:
+#  application:
+#    name: book-search-service
+#  freemarker:
+#    suffix: .html
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/booktest4?characterEncoding=UTF-8&serverTimezone=UTC
+#    username: root
+#    password: 1234
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+##    open-in-view: false
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+##    hibernate:
+##      ddl-auto: create
+##      format_sql: true
+##      org.hibernate.type: trace
+#
+
+
